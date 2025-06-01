@@ -2,14 +2,11 @@
 # di root folder proyek Anda (misalnya, final_project_streamlit/app.py)
 
 import streamlit as st
-# from streamlit_option_menu import option_menu # Opsional, jika ingin menu sidebar kustom
-# import plotly.express as px # Tidak digunakan langsung di app.py, tapi mungkin di pages
-# import pandas as pd # Tidak digunakan langsung di app.py, tapi mungkin di pages
 
 # Konfigurasi Halaman Utama
 st.set_page_config(
-    page_title="Analisis Kepuasan PCM",
-    page_icon="📊",  # Anda bisa menggunakan emoji atau path ke file .ico
+    page_title="Analisis Kepuasan Pakuwon City Mall Surabaya", # Judul yang muncul di tab browser
+    page_icon="assets/logo_page.png",  # Path ke file logo baru Anda
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
@@ -18,11 +15,10 @@ st.set_page_config(
         'About': """
         ## Aplikasi Analisis Kepuasan Pengunjung Pakuwon City Mall
         Dibuat untuk Final Project Mata Kuliah Metode Riset Sosial dan Bisnis.
-        
-        Institut Teknologi Sepuluh Nopember, Surabaya - 2025.
         """
     }
 )
+
 
 # --- CSS KUSTOM ---
 # Fungsi untuk memuat CSS dari file atau menggunakan inline CSS
